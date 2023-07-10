@@ -23,9 +23,9 @@ import {
   PanGestureHandlerEventPayload,
   PanGestureHandlerProps,
 } from '../handlers/PanGestureHandler';
-import {
+import
 GestureHandlerRootView
-} from './GestureHandlerRootView';
+from './GestureHandlerRootView';
 import {
   TapGestureHandler,
   TapGestureHandlerEventPayload,
