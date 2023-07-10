@@ -24,6 +24,9 @@ import {
   PanGestureHandlerProps,
 } from '../handlers/PanGestureHandler';
 import {
+GestureHandlerRootView
+} from './GestureHandlerRootView';
+import {
   TapGestureHandler,
   TapGestureHandlerEventPayload,
 } from '../handlers/TapGestureHandler';
@@ -506,6 +509,7 @@ export default class Swipeable extends Component<
     );
 
     return (
+      <GestureHandlerRootView>
       <PanGestureHandler
         activeOffsetX={[-dragOffsetFromRightEdge, dragOffsetFromLeftEdge]}
         {...this.props}
@@ -532,6 +536,7 @@ export default class Swipeable extends Component<
           </TapGestureHandler>
         </Animated.View>
       </PanGestureHandler>
+        </GestureHandlerRootView>
     );
   }
 }
